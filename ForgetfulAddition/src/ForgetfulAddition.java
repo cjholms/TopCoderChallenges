@@ -1,15 +1,15 @@
 
 public class ForgetfulAddition {
 	
-	public int minNumber(String input) {
+	public int minNumber(String expression) {
 		
 		int minSum = Integer.MAX_VALUE;
 		int endIndex = 1;
 		
-		while (endIndex < input.length()) {
+		while (endIndex < expression.length()) {
 			
-			String firstAddend = input.substring(0, endIndex);
-			String secondAddend = input.substring(endIndex++);
+			String firstAddend = expression.substring(0, endIndex);
+			String secondAddend = expression.substring(endIndex++);
 			int sum = Integer.parseInt(firstAddend) + 
 					Integer.parseInt(secondAddend);
 			if (sum < minSum) {
